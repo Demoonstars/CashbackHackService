@@ -10,9 +10,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.testng:testng:7.1.0'
+    // Подключаем современный JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
 }
 
 test {
-    useTestNG()
+    useJUnitPlatform()
 }
